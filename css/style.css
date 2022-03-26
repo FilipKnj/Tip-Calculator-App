@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  margin: 4.7rem 0 3.8rem;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  border-radius: 1.6rem 1.6rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card .input .label-wrapper label {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #5e7a7d;
+  padding: 0.6rem 0;
+}
+.card .input .label-wrapper .error-msg {
+  color: indianred;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+.card .input .label-wrapper .show-error-msg {
+  -webkit-transform: opacity 1s ease;
+          transform: opacity 1s ease;
+  opacity: 1;
+}
+.card .input .inp-text {
+  width: 100%;
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-size: 2.4rem;
+  text-align: right;
+  padding: 0.5rem 1.6rem;
+}
+.card .input .inp-text:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+.card .input .inp-wrapper {
+  position: relative;
+}
+.card .input .inp-wrapper img {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+}
+.card .input .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+.card .input .btn-wrapper .btn {
+  width: 47%;
+  background: #00494d;
+  color: white;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+}
+.card .input .btn-wrapper .btn:hover {
+  background: #35e8df;
+}
+.card .input .btn-wrapper .btn-active {
+  background: #26c0ab;
+  color: #00494d;
+}
+.card .input .btn-wrapper .inp-text {
+  width: 47%;
+}
+.card .output {
+  width: 100%;
+  background-color: #00494d;
+  padding: 2.2rem;
+  border-radius: 1.6rem;
+}
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-size: 1.6rem;
+}
+.card .output .line-wrapper .line-output .desc {
+  font-size: 1.3rem;
+  color: #5e7a7d;
+}
+.card .output .line-wrapper .line-output .value {
+  font-size: 3rem;
+  color: #26c0ab;
+}
+.card .output .btn {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #26c0ab;
+  color: #00494d;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border-radius: 0.6rem;
+  margin-top: 3.4rem;
+}
+.card .output .btn:hover {
+  background: #35e8df;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 61%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 1.6rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 1.5rem;
+  }
+  .card .input {
+    width: 100%;
+    padding: 0 2.5rem 1.5rem 2rem;
+  }
+  .card .input .label-wrapper {
+    margin-left: 1rem;
+  }
+  .card .input .btn-wrapper {
+    gap: 1rem;
+  }
+  .card .input .btn-wrapper .btn {
+    width: 31%;
+  }
+  .card .input .btn-wrapper .inp-text {
+    width: 31%;
+  }
+  .card .output {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+    gap: 1rem;
+  }
+  .card .output .line-wrapper .line-output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+  .card .output .line-wrapper .line-output .value {
+    font-size: 4.6rem;
+  }
+}
